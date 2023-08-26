@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/its_first_fragment"
+    android:layout_weight="10"
+    android:padding="5dp"
+    android:layout_height="match_parent"
+    tools:context=".firstFrgment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="@color/my_back"
+        android:layout_marginTop="12dp"
+        app:cardCornerRadius="40dp"
+        android:layout_height="120dp">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:text="Available Money"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/see_more"
+            android:layout_width="40dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="175dp"
+            android:layout_marginTop="75dp"
+            android:tooltipText="Expence Details"
+            android:src="@drawable/see_more" />
+
+        <TextView
+            android:id="@+id/tvBlank"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="55dp"
+            android:fontFamily="@font/my_fonts"
+            android:gravity="start"
+            android:text="0.0"
+            android:textSize="34sp"
+            android:tooltipText="Your Capital Amount" />
+
+        <ImageView
+            android:id="@+id/btnNextActivity"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="35dp"
+            android:background="@color/white1"
+            android:src="@drawable/add_money"
+            android:textAllCaps="false"
+
+            android:tooltipText="Add Money" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="137dp" />
+<!--    wasy 187 tha margin top-->
+</FrameLayout>

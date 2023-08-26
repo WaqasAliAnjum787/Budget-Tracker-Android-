@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_one_to_fragment_two">
+    <fragment
+        android:name="com.example.budgettracker.firstFrgment"
+        android:id="@+id/fragment_one_to_two"
+        android:label="Fragment1" >
+        <action
+            android:id="@+id/action_fragment_one_to_two"
+            app:destination="@id/fragment_two"/>
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_two"
+        android:name="com.example.budgettracker.secondFragment"
+        android:label="Fragment2"/>
+</navigation>

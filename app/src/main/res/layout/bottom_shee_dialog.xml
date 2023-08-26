@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_title_of_bottom_sheet"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:text="A Header"
+        android:fontFamily="@font/new_one_fonts"
+        android:gravity="start|center"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/iv_bottom_sheet"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.62" />
+
+    <ImageView
+        android:id="@+id/iv_bottom_sheet"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.21" />
+
+    <EditText
+        android:id="@+id/etAdBudget"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Amount"
+        android:inputType="numberDecimal"
+        android:textSize="25sp"
+        android:fontFamily="@font/new_one_fonts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_of_bottom_sheet" />
+
+    <EditText
+        android:id="@+id/budget_discription"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:textSize="25sp"
+        android:fontFamily="@font/new_one_fonts"
+        android:hint="Enter Description"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAdBudget" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_added"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textAlignment="center"
+        android:textSize="19sp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="92dp"
+        android:fontFamily="@font/new_one_fonts"
+        android:text="Add Expense"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintStart_toStartOf="@+id/budget_discription"
+        app:layout_constraintTop_toBottomOf="@+id/budget_discription"
+        app:layout_constraintWidth_percent="0.4" />
+
+    <TextView
+        android:id="@+id/tv_view_more"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="0dp"
+        android:text="See Previous Transections"
+        android:fontFamily="@font/best_fonts"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintWidth_percent="1"
+        app:layout_constraintHeight_percent="0.1"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/budget_discription" />
+</androidx.constraintlayout.widget.ConstraintLayout>
